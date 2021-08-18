@@ -479,16 +479,16 @@ ul {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
-  left: 50%;
+  left: 0%;
   width: 90%;
   top: 20vh;
-  -webkit-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
   background-color: #e9e9e9;
   opacity: 0.9;
   display: -webkit-box;
   display: -ms-flexbox;
+  -webkit-transform: translate(5%, 0%);
+  -ms-transform: translate(5%, 0%);
+  transform: translate(5%, 0%);
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -503,6 +503,8 @@ ul {
   overflow-y: scroll;
   border-radius: 20px;
   padding: 10rem 2rem 2rem;
+  -webkit-animation: mymove 1s linear;
+  animation: mymove 1s linear;
 }
 .modal-wrapper .modal-inner h2 {
   font-size: 2rem;
@@ -524,25 +526,22 @@ ul {
   background-color: #080202;
   color: white;
 }
+@media (max-width: 700px) {
+  .modal-wrapper .modal-inner h2 {
+    margin-top: 75rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .modal-wrapper .modal-inner p {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
 
 .modal-wrapper.hidden {
   display: none;
-}
-
-#bottom-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #ece6e6;
-  margin-top: 2000px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 2rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .position-button {
@@ -568,6 +567,39 @@ ul {
   background: linear-gradient(177deg, #c4dbeb 0%, #23cb1b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c4dbeb",endColorstr="#23cb1b",GradientType=1);
   color: white;
+}
+
+#bottom-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ece6e6;
+  margin-top: 2000px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 20vh;
+  }
+}
+@keyframes mymove {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 20vh;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
