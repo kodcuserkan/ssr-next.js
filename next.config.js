@@ -12,7 +12,7 @@ module.exports = {
         headers: [
           {
             key: 'app-id',
-            value: process.env.NEXT_PUBLIC_DUMMY_API_APP_ID,
+            value: String(process.env.NEXT_PUBLIC_DUMMY_API_APP_ID),
           }
         ],
       },

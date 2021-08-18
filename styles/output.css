@@ -15,6 +15,12 @@ a {
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .desktop-card-wrapper {
   box-sizing: border-box;
   padding: 0;
@@ -173,6 +179,97 @@ a {
 .mobile-card .like-text {
   font-size: small;
   margin-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  background-color: #080202;
+  height: 4rem;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  list-style: none;
+  width: 100%;
+}
+.navbar li {
+  padding: 1.5rem 1rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li a {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user-cards-wrapper {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.user-cards-wrapper.mobile {
+  background-color: #b1a1a1;
+}
+.user-cards-wrapper.mobile .user-card {
+  display: flex;
+  min-height: 100px;
+  min-width: 100px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 1rem;
+}
+.user-cards-wrapper.mobile .user-card .inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  border: 2px dashed #064614;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+.user-cards-wrapper.mobile .user-card .inner img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.user-cards-wrapper.desktop {
+  background-color: #83d494;
+}
+.user-cards-wrapper.desktop .user-card {
+  display: flex;
+  min-height: 100px;
+  min-width: 100px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 1rem;
+}
+.user-cards-wrapper.desktop .user-card .inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  border: 2px dashed #0d160f;
+  padding: 0.5rem;
+}
+.user-cards-wrapper.desktop .user-card .inner img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=output.css.map */
