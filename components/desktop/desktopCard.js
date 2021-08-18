@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
 
-const DesktopCard = ({deviceType}) => {
-
-
-  console.log("desktop page deviceType: ", deviceType);
-  
-
+const DesktopCard = ({ deviceType }) => {
   useEffect(() => {
     const article = document.querySelector("article");
 
@@ -40,7 +35,8 @@ const DesktopCard = ({deviceType}) => {
     <div className="desktop-card">
       <article className="article">
         <figure className="figure">
-          <img className="img"
+          <img
+            className="img"
             alt="A rather marvellous macaw, opening one of its wings to support the cause."
             src="https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           />

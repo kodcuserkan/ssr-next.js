@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
-const food = "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/6/FNM_100119-Avocado-Veggie-Rolls_s4x3.jpg.rend.hgtvcom.826.620.suffix/1567792791089.jpeg"
-const MobileCard = ({deviceType}) => {
 
-  console.log("mobile page deviceType", deviceType);
+const food =
+  "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/6/FNM_100119-Avocado-Veggie-Rolls_s4x3.jpg.rend.hgtvcom.826.620.suffix/1567792791089.jpeg";
 
+const MobileCard = ({ deviceType }) => {
   const recipeAuthor = "Efecan";
   const recipeItem = {
     title: "Avokado Ezmeli Taco",
     date: "8 Haziran 2021, Salı",
     image: food,
-    description: "Bu kremsi ve baharatlı avokado sosu, günlük taco'larınızı hazırlamak için harika seçeneklerden biri. Geleneksel olarak flautas veya taquitos ile servis edilir, ancak bazı vegan enchiladalara da harika bir katkı sağlar.",
+    description:
+      "Bu kremsi ve baharatlı avokado sosu, günlük taco'larınızı hazırlamak için harika seçeneklerden biri. Geleneksel olarak flautas veya taquitos ile servis edilir, ancak bazı vegan enchiladalara da harika bir katkı sağlar.",
   };
 
   const like = 193;

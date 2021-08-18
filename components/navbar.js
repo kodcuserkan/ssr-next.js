@@ -10,7 +10,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link href="/users">
+        <Link href="/users?page=0&limit=5">
           <a>Users</a>
         </Link>
       </li>

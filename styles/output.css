@@ -4,6 +4,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #429752;
+  position: relative;
 }
 
 a {
@@ -26,7 +28,7 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
-  min-height: 100vh;
+  min-height: 70vh;
   justify-content: center;
   align-items: center;
   background: #f3f1fe;
@@ -234,6 +236,7 @@ ul {
   justify-content: center;
   text-transform: capitalize;
   border: 2px dashed #064614;
+  background-color: #99bed3;
   border-radius: 20px;
   padding: 0.5rem;
 }
@@ -264,12 +267,151 @@ ul {
   justify-content: center;
   text-transform: capitalize;
   border: 2px dashed #0d160f;
+  background-color: #59b9f0;
   padding: 0.5rem;
 }
 .user-cards-wrapper.desktop .user-card .inner img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
+}
+
+.users-outer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.pagination {
+  height: 50px;
+  width: 100%;
+  background-color: #0d160f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+.pagination button {
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bd3a3a;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #ece6e6;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  background-color: #666666;
+  cursor: not-allowed;
+  color: black;
+}
+.pagination span {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.bg-cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: #080202;
+  opacity: 0.7;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.modal-wrapper .modal-inner {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  top: 20vh;
+  transform: translate(-50%, 0%);
+  background-color: #e9e9e9;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-radius: 20px;
+  padding: 10rem 2rem 2rem;
+}
+.modal-wrapper .modal-inner h2 {
+  font-size: 2rem;
+  padding: 4rem 0;
+  margin-bottom: -3rem;
+  margin-top: 8rem;
+}
+.modal-wrapper .modal-inner p {
+  line-height: 1.7;
+}
+.modal-wrapper .modal-inner button {
+  padding: 1rem 4rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.modal-wrapper .modal-inner button:hover {
+  background-color: #080202;
+  color: white;
+}
+
+.modal-wrapper.hidden {
+  display: none;
+}
+
+#bottom-text {
+  display: flex;
+  background-color: #ece6e6;
+  margin-top: 2000px;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+}
+
+.position-button {
+  position: fixed;
+  z-index: 2222;
+  top: 0.6rem;
+  right: 2rem;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #c4dbeb;
+  background: -moz-linear-gradient(177deg, #c4dbeb 0%, #23cb1b 100%);
+  background: -webkit-linear-gradient(177deg, #c4dbeb 0%, #23cb1b 100%);
+  background: linear-gradient(177deg, #c4dbeb 0%, #23cb1b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c4dbeb",endColorstr="#23cb1b",GradientType=1);
+  color: white;
 }
 
 /*# sourceMappingURL=output.css.map */
